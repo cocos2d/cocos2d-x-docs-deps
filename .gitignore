@@ -1,5 +1,10 @@
 
+cocos2d-x-docs/
+creator-docs/
+creator-api-docs/
 documentation/
+
+
 
 # Ignore thumbnails created by windows
 Thumbs.db
