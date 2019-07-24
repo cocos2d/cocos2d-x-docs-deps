@@ -128,8 +128,6 @@ mv _book/ manual/
 rsync --recursive manual ../documentation/creator/1.9
 rm -rf manual/
 git stash
-
-
 echo "---------------------------------"
 echo "Cocos Creator -- v1.9 done"
 echo "---------------------------------"
@@ -157,7 +155,6 @@ mv _book/ manual/
 rsync --recursive manual ../documentation/creator/1.10
 rm -rf manual/
 git stash
-
 echo "---------------------------------"
 echo "Cocos Creator -- v1.10 done"
 echo "---------------------------------"
@@ -186,7 +183,6 @@ rsync --recursive manual ../documentation/creator/2.0
 rsync --recursive manual ../documentation/creator/
 rm -rf manual/
 git stash
-
 echo "---------------------------------"
 echo "Cocos Creator - v2.0.x done"
 echo "---------------------------------"
@@ -214,7 +210,6 @@ mv _book/ manual/
 rsync --recursive manual ../documentation/creator/2.1
 rm -rf manual/
 git stash
-
 echo "---------------------------------"
 echo "Cocos Creator - v2.1 done"
 echo "---------------------------------"
@@ -247,7 +242,6 @@ echo "Cocos Creator - v2.2 done"
 echo "---------------------------------"
 
 cd ..
-
 
 echo "-----------------"
 echo "Creator API Docs "
@@ -362,7 +356,6 @@ mv v2.2/ api/
 rsync --recursive api ../documentation/creator/2.2
 rm -rf api/
 git stash
-
 echo "---------------------------------"
 echo "Cocos Creator API - v2.2 done"
 echo "---------------------------------"
@@ -373,7 +366,6 @@ echo "---------------------------------"
 echo "Deploying to web-server location"
 echo "---------------------------------"
 echo "Copy to nginx..."
-cd ~
 #rsync --recursive documentation /var/www
 
 echo "---------------------------------"
