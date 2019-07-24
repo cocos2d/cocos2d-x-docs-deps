@@ -363,7 +363,6 @@ mv v2.2/ api/
 rsync --recursive api ../documentation/creator/2.2
 rm -rf api/
 git stash
-
 echo "---------------------------------"
 echo "Cocos Creator API - v2.2 done"
 echo "---------------------------------"
@@ -373,8 +372,7 @@ cd ..
 echo "---------------------------------"
 echo "Deploying to web-server location"
 echo "---------------------------------"
-echo "Copy to nginx..."
-cd ~
+echo "Copy to nginx location..."
 rsync --recursive documentation /var/www
 
 echo "---------------------------------"
