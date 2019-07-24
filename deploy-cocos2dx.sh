@@ -59,7 +59,7 @@ else
     ## copy some needed files
     echo "Cocos2d-x-docs v4 -- copying needed files..."
     cp redirect.html.en _book/index.html
-    cp index.html.en ../documentation/index.html
+    #cp index.html.en ../documentation/index.html
 
     ## copy everything to deployment directory
     echo "Cocos2d-x-docs v4 -- copy everything to deployment directory..."
