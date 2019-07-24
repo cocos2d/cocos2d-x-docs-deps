@@ -52,7 +52,6 @@ echo "---------------------------------"
 echo "Deploying to web-server location"
 echo "---------------------------------"
 echo "Copy to nginx..."
-cd ~
 rsync --recursive documentation /var/www
 
 echo "---------------------------------"
