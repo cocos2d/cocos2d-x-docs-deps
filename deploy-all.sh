@@ -193,7 +193,6 @@ echo "Cocos Creator v2.x -- copy everything to deployment directory..."
 cp ../cocos2d-x-docs/redirect.html.en _book/index.html
 mv _book/ manual/
 rsync --recursive manual ../documentation/creator/2.0
-rsync --recursive manual ../documentation/creator/
 rm -rf manual/
 #git stash
 git reset --hard origin/v2.0
@@ -223,6 +222,7 @@ echo "Cocos Creator v2.1.x -- copy everything to deployment directory..."
 cp ../cocos2d-x-docs/redirect.html.en _book/index.html
 mv _book/ manual/
 rsync --recursive manual ../documentation/creator/2.1
+rsync --recursive manual ../documentation/creator/
 rm -rf manual/
 #git stash
 git reset --hard origin/v2.1
@@ -329,7 +329,6 @@ gitbook build
 echo "Cocos Creator API v2.0 -- copy everything to deployment directory..."
 cp ../cocos2d-x-docs/redirect.html.en _book/index.html
 mv _book/ api/
-rsync --recursive api ../documentation/creator/
 rsync --recursive api ../documentation/creator/2.0/
 mv api/ v2.0/
 rsync --recursive v2.0 ../documentation/api-ref/creator
@@ -356,6 +355,7 @@ cp ../cocos2d-x-docs/redirect.html.en _book/index.html
 mv _book/ v2.1/
 rsync --recursive v2.1 ../documentation/api-ref/creator
 mv v2.1/ api/
+rsync --recursive api ../documentation/creator/
 rsync --recursive api ../documentation/creator/2.1
 rm -rf api/
 #git stash
@@ -394,13 +394,13 @@ echo "---------------------------------"
 echo "Deploying to web-server location"
 echo "---------------------------------"
 echo "Copy to nginx location..."
-#rsync --recursive documentation /var/www
+rsync --recursive documentation /var/www
 
 echo "---------------------------------"
 echo "Restarting web-server..."
 echo "---------------------------------"
-#sudo /usr/sbin/nginx -s stop
-#sudo /usr/sbin/nginx
+sudo /usr/sbin/nginx -s stop
+sudo /usr/sbin/nginx
 
 echo "---------------------------------"
 echo "Deployment done!"
