@@ -394,13 +394,13 @@ echo "---------------------------------"
 echo "Deploying to web-server location"
 echo "---------------------------------"
 echo "Copy to nginx location..."
-rsync --recursive documentation /var/www
+#rsync --recursive documentation /var/www
 
 echo "---------------------------------"
 echo "Restarting web-server..."
 echo "---------------------------------"
-sudo /usr/sbin/nginx -s stop
-sudo /usr/sbin/nginx
+#sudo /usr/sbin/nginx -s stop
+#sudo /usr/sbin/nginx
 
 echo "---------------------------------"
 echo "Deployment done!"
