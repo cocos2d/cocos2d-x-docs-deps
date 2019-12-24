@@ -8,9 +8,9 @@ echo "--------------------------------"
 git checkout master
 git reset --hard origin/master
 
-if (git pull origin master | grep -q "$git_string"); then
-    echo "*** Cocos2d-x v3 skipped, GitHub repo up to date... ***"
-else
+#if (git pull origin master | grep -q "$git_string"); then
+#    echo "*** Cocos2d-x v3 skipped, GitHub repo up to date... ***"
+#else
     echo "Building Cocos2d-x v3 docs..."
     #git pull origin master
     cp -rf config/cocos2d-x.org/. ./
@@ -36,7 +36,7 @@ else
     rm -rf v3/
     #git stash
     git reset --hard origin/master
-fi
+#fi
 
 echo "--------------------------------"
 echo "Cocos2d-x -- pulling v4..."
@@ -44,9 +44,9 @@ echo "--------------------------------"
 git checkout v4-docs
 git reset --hard origin/v4-docs
 
-if (git pull origin v4-docs | grep -q "$git_string"); then
-    echo "*** Cocos2d-x v4 skipped, GitHub repo up to date... ***"
-else
+#if (git pull origin v4-docs | grep -q "$git_string"); then
+#    echo "*** Cocos2d-x v4 skipped, GitHub repo up to date... ***"
+#else
     echo "Building Cocos2d-x v4 docs..."
     #git pull origin v4-docs
     cp -rf config/cocos2d-x.org/. ./
@@ -72,7 +72,7 @@ else
     rm -rf v4/
     #git stash
     git reset --hard origin/v4-docs
-fi
+#fi
 
 cd ..
 
