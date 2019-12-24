@@ -75,3 +75,9 @@ else
 fi
 
 cd ..
+
+echo "---------------------------------"
+echo "Deploying to web-server location"
+echo "---------------------------------"
+echo "Copy to nginx location..."
+rsync --recursive documentation /var/www
